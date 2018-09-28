@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class wingForce : MonoBehaviour {
 
-    float forceMultipler = 10.0f;
+    public float forceMultipler = 5.0f;
 
     // Update is called once per frame
     private void FixedUpdate()
