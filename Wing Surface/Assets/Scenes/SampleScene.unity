@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -173,7 +173,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 42.1, y: 65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -336,7 +336,7 @@ HingeJoint:
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 0.5
+    damper: 2
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1028,7 +1028,7 @@ HingeJoint:
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 0.5
+    damper: 2
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1105,6 +1105,7 @@ GameObject:
   - component: {fileID: 1471885047}
   - component: {fileID: 1471885045}
   - component: {fileID: 1471885046}
+  - component: {fileID: 1471885053}
   m_Layer: 0
   m_Name: Primary
   m_TagString: Untagged
@@ -1139,7 +1140,7 @@ HingeJoint:
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 0.5
+    damper: 2
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1200,7 +1201,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471885043}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1262,6 +1263,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471885043}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!138 &1471885053
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471885043}
+  m_ConnectedBody: {fileID: 653096252}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &1496245370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,19 +1318,19 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
+  m_HeightmapPixelError: 3.4
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
   m_CastShadows: 1
   m_DrawHeightmap: 1
   m_DrawTreesAndFoliage: 1
-  m_ReflectionProbeUsage: 1
-  m_MaterialType: 0
+  m_ReflectionProbeUsage: 0
+  m_MaterialType: 3
   m_LegacySpecular:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: 0.078125
-  m_MaterialTemplate: {fileID: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 6139fc8097955be4da2f51864b3e1dc1, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_ScaleInLightmap: 0.1024
@@ -1510,7 +1524,7 @@ HingeJoint:
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 0.5
+    damper: 2
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1805,6 +1819,7 @@ GameObject:
   - component: {fileID: 1984210997}
   - component: {fileID: 1984210996}
   - component: {fileID: 1984210998}
+  - component: {fileID: 1984210999}
   m_Layer: 0
   m_Name: Tail
   m_TagString: Untagged
@@ -1943,9 +1958,21 @@ ConstantForce:
   m_GameObject: {fileID: 1984210989}
   m_Enabled: 1
   m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 100, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &1984210999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984210989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24e2e1422cceb64f9f0ba01495609aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  netForce: 100
 --- !u!1 &2019841186
 GameObject:
   m_ObjectHideFlags: 0
