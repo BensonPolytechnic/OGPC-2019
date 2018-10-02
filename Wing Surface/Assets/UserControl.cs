@@ -18,11 +18,11 @@ public class UserControl : MonoBehaviour {
         }
         else if (Input.GetKey(KeyCode.Q))
         {
-            hingeSpring.targetPosition = -30;
+            hingeSpring.targetPosition = -15;
         }
         else if (Input.GetKey(KeyCode.E))
         {
-            hingeSpring.targetPosition = 30;
+            hingeSpring.targetPosition = 15;
         }
         else
         {

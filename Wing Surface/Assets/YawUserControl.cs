@@ -20,11 +20,11 @@ public class YawUserControl : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            hingeSpring.targetPosition = -30;
+            hingeSpring.targetPosition = -15;
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            hingeSpring.targetPosition = 30;
+            hingeSpring.targetPosition = 15;
         }
         else
         {

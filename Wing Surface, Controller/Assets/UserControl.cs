@@ -12,7 +12,7 @@ public class UserControl : MonoBehaviour {
 
         //float verticalInput = Input.GetAxis("Vertical");
 
-        hingeSpring.targetPosition = 30 * Input.GetAxis("Horizontal");
+        hingeSpring.targetPosition = 15 * Input.GetAxis("Horizontal");
 
         connection.spring = hingeSpring;
     }

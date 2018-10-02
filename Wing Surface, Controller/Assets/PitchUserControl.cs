@@ -14,7 +14,7 @@ public class PitchUserControl : MonoBehaviour
 
         //float verticalInput = Input.GetAxis("Vertical");
 
-        hingeSpring.targetPosition = 30 * Input.GetAxis("Vertical") * (-1);
+        hingeSpring.targetPosition = 15 * Input.GetAxis("Vertical") * (-1);
 
         connection.spring = hingeSpring;
     }

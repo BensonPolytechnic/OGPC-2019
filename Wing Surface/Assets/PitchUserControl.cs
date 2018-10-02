@@ -20,11 +20,11 @@ public class PitchUserControl : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.W))
         {
-            hingeSpring.targetPosition = -30;
+            hingeSpring.targetPosition = -15;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            hingeSpring.targetPosition = 30;
+            hingeSpring.targetPosition = 15;
         }
         else
         {

@@ -192,8 +192,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 45096944}
   m_LocalRotation: {x: -0, y: 0.37620643, z: -0, w: 0.92653584}
-  m_LocalPosition: {x: 153.6, y: 4.83, z: 100.4}
-  m_LocalScale: {x: 100, y: 1, z: 12}
+  m_LocalPosition: {x: 134.5, y: 5.51, z: 119}
+  m_LocalScale: {x: 150, y: 2, z: 12}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -380,7 +380,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 311994189}
   serializedVersion: 2
-  m_Mass: 0.25
+  m_Mass: 0.125
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -519,11 +519,11 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.5, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.5000036, y: 0, z: -0.0000030199687}
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 2
+    damper: 10
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 4
+  forceMultipler: 1.5
 --- !u!75 &588488526
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -584,7 +584,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 588488521}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 2.5
+  forceMultipler: 0.625
 --- !u!75 &628604555
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -710,7 +710,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 628604552}
   serializedVersion: 2
-  m_Mass: 0.25
+  m_Mass: 0.125
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -930,7 +930,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -1, z: -1}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -19.999992, z: 0.00000023841848}
+  m_ConnectedAnchor: {x: 0.000004082918, y: -19.999971, z: 0.00000023841848}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -964,7 +964,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: -1, z: 1}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 20.000002, z: -0.00000023841858}
+  m_ConnectedAnchor: {x: -0.000004082918, y: 19.99998, z: -0.00000023841858}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -998,7 +998,7 @@ HingeJoint:
   m_Anchor: {x: -1.66667, y: -0.6, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00001001358, y: -2.2737357e-12, z: -0.000003099442}
+  m_ConnectedAnchor: {x: -0.0000047683716, y: 0.000035762776, z: 0.0000007152548}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 5
+  forceMultipler: 0.5
 --- !u!75 &670841984
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 670841981}
   serializedVersion: 2
-  m_Mass: 0.25
+  m_Mass: 0.125
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 3.5
+  forceMultipler: 0.875
 --- !u!75 &963333518
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -1244,7 +1244,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 963333515}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1316,11 +1316,11 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.5, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.5000011, y: 0, z: 0.0000073115034}
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 2
+    damper: 10
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1428,11 +1428,11 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.20000005, y: 0, z: -0.33333325}
+  m_ConnectedAnchor: {x: 0.20000005, y: -0.000030040741, z: -0.33333325}
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 2
+    damper: 10
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 4
+  forceMultipler: 1
 --- !u!75 &1471885048
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -1493,7 +1493,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1471885043}
   serializedVersion: 2
-  m_Mass: 0.5
+  m_Mass: 0.25
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1685,7 +1685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 3
+  forceMultipler: 0.75
 --- !u!75 &1540092938
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -1704,7 +1704,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1540092935}
   serializedVersion: 2
-  m_Mass: 0.25
+  m_Mass: 0.125
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -1812,11 +1812,11 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.5, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.5000036, y: 0, z: -0.0000015894573}
   m_UseSpring: 1
   m_Spring:
     spring: 100
-    damper: 2
+    damper: 10
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 3.5
+  forceMultipler: 0.875
 --- !u!75 &1549536216
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -1877,7 +1877,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549536211}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -2014,7 +2014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f7e7c5f84e7d4fb679dee8140cad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMultipler: 2.5
+  forceMultipler: 0.625
 --- !u!75 &1826326174
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -2033,7 +2033,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1826326171}
   serializedVersion: 2
-  m_Mass: 0.25
+  m_Mass: 0.125
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -2134,7 +2134,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978647489}
   serializedVersion: 2
-  m_Mass: 0.25
+  m_Mass: 0.125
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2256,9 +2256,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984210989}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2366,7 +2366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b24e2e1422cceb64f9f0ba01495609aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  netForce: 100
+  netForce: 50
 --- !u!1 &2015756544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2406,7 +2406,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2015756544}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 0.05
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2490,8 +2490,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2019841186}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 40, z: 0}
+  m_LocalRotation: {x: -0, y: -0.9269525, z: -0, w: 0.37517884}
+  m_LocalPosition: {x: 185.65111, y: 8.82, z: 67.25113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 653096251}
@@ -2500,4 +2500,4 @@ Transform:
   - {fileID: 2015756545}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -135.929, z: 0}
