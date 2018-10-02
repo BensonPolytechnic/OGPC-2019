@@ -14,22 +14,7 @@ public class PitchUserControl : MonoBehaviour
 
         //float verticalInput = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S))
-        {
-            hingeSpring.targetPosition = 0;
-        }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            hingeSpring.targetPosition = -15;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            hingeSpring.targetPosition = 15;
-        }
-        else
-        {
-            hingeSpring.targetPosition = 0;
-        }
+        hingeSpring.targetPosition = 15 * Input.GetAxis("Vertical") * (-1);
 
         connection.spring = hingeSpring;
     }

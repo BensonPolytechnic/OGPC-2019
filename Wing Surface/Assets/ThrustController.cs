@@ -5,12 +5,13 @@ using UnityEngine;
 public class ThrustController : MonoBehaviour {
 
     public float netForce = 100.0f;
-	
-	// Update is called once per frame
-	void Update () {
-		Rigidbody rb = GetComponent<Rigidbody>();
+
+    // Update is called once per frame
+    void Update()
+    {
+        Rigidbody rb = GetComponent<Rigidbody>();
         ConstantForce force = GetComponent<ConstantForce>();
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetButton("Fire1"))
         {
             force.relativeForce = new Vector3(netForce, 0.0f, 0.0f);
         }
@@ -18,6 +19,6 @@ public class ThrustController : MonoBehaviour {
         {
             force.relativeForce = new Vector3(0.0f, 0.0f, 0.0f);
         }
-        
-	}
+
+    }
 }

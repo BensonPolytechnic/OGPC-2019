@@ -4,30 +4,16 @@ using UnityEngine;
 
 public class UserControl : MonoBehaviour {
 
-	// Update is called once per frame
-	void FixedUpdate () {
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         HingeJoint connection = GetComponent<HingeJoint>();
 
         JointSpring hingeSpring = connection.spring;
 
         //float verticalInput = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.Q) && Input.GetKey(KeyCode.E))
-        {
-            hingeSpring.targetPosition = 0;
-        }
-        else if (Input.GetKey(KeyCode.Q))
-        {
-            hingeSpring.targetPosition = -15;
-        }
-        else if (Input.GetKey(KeyCode.E))
-        {
-            hingeSpring.targetPosition = 15;
-        }
-        else
-        {
-            hingeSpring.targetPosition = 0;
-        }
+        hingeSpring.targetPosition = 15 * Input.GetAxis("Horizontal");
 
         connection.spring = hingeSpring;
     }

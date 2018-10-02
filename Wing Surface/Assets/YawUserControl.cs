@@ -14,22 +14,7 @@ public class YawUserControl : MonoBehaviour
 
         //float verticalInput = Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
-        {
-            hingeSpring.targetPosition = 0;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            hingeSpring.targetPosition = -15;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            hingeSpring.targetPosition = 15;
-        }
-        else
-        {
-            hingeSpring.targetPosition = 0;
-        }
+        hingeSpring.targetPosition = -15 * (Input.GetAxis("LTrigger") + Input.GetAxis("RTrigger"));
 
         connection.spring = hingeSpring;
     }
