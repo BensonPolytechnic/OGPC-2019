@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1316,7 +1316,7 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.5000011, y: 0, z: 0.0000073115034}
+  m_ConnectedAnchor: {x: 0.5000011, y: -0.0000015199184, z: 0.0000073115034}
   m_UseSpring: 1
   m_Spring:
     spring: 100
@@ -1373,7 +1373,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1082708570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 0.6666667, y: 1, z: 1}
   m_Children:
   - {fileID: 963333516}
@@ -1428,7 +1428,7 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.20000005, y: -0.000030040741, z: -0.33333325}
+  m_ConnectedAnchor: {x: 0.20000005, y: -0.000030040741, z: 0.5000001}
   m_UseSpring: 1
   m_Spring:
     spring: 100
@@ -1668,7 +1668,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1540092935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 0, z: 1.5}
+  m_LocalPosition: {x: -0.8, y: -0, z: 0.25}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1.5}
   m_Children: []
   m_Father: {fileID: 354011900}
@@ -1812,7 +1812,7 @@ HingeJoint:
   m_Anchor: {x: -0.5, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.5000036, y: 0, z: -0.0000015894573}
+  m_ConnectedAnchor: {x: 0.5000036, y: 0.0000015199184, z: -0.0000015894573}
   m_UseSpring: 1
   m_Spring:
     spring: 100
@@ -1961,7 +1961,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1564361254}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 0.6666667, y: 1, z: 1}
   m_Children:
   - {fileID: 1549536212}

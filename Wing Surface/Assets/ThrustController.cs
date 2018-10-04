@@ -9,7 +9,6 @@ public class ThrustController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
         ConstantForce force = GetComponent<ConstantForce>();
         if (Input.GetButton("Fire1"))
         {
