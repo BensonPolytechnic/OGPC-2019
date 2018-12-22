@@ -18,11 +18,6 @@ public class fpsCounter : MonoBehaviour {
         currentFrameTime = Time.deltaTime;
 	}
 
-    void FixedUpdate()
-    {
-        gameObject.GetComponent<Rigidbody>().AddForce(0, 0, 0);
-    }
-
     private void OnGUI()
     {
         GUI.Label(new Rect(0, 0, 100, 100), (2 / (lastFrameTime + currentFrameTime)).ToString());

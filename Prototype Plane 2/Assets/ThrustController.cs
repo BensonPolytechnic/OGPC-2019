@@ -10,13 +10,14 @@ public class ThrustController : MonoBehaviour {
     void Update()
     {
         ConstantForce force = GetComponent<ConstantForce>();
+
         if (Input.GetButton("Fire1"))
         {
-            force.relativeForce = new Vector3(netForce, 0.0f, 0.0f);
+            force.relativeForce = new Vector3(netForce, force.relativeForce[1], force.relativeForce[2]);
         }
         else
         {
-            force.relativeForce = new Vector3(0.0f, 0.0f, 0.0f);
+            force.relativeForce = new Vector3(0.0f, force.relativeForce[1], force.relativeForce[2]);
         }
 
     }

@@ -4,17 +4,45 @@ using UnityEngine;
 
 public class UserControl : MonoBehaviour {
 
+    public float pitchTrim = 0.0f;
+    public float yawTrim = 0.0f;
+    public float rollTrim = 0.0f;
+
     // Update is called once per frame
     void FixedUpdate()
     {
-        HingeJoint connection = GetComponent<HingeJoint>();
+        HingeJoint[] connections = GetComponents<HingeJoint>();
 
-        JointSpring hingeSpring = connection.spring;
+        foreach (HingeJoint joint in connections)
+        {
+            JointSpring surfaceSpring = joint.spring;
 
-        //float verticalInput = Input.GetAxis("Vertical");
+            if (joint.connectedBody.CompareTag("Lroll"))
+            {
+                
+                surfaceSpring.targetPosition = -2.5f * Input.GetAxis("Horizontal") - rollTrim;
+                
+            }
+            else if (joint.connectedBody.CompareTag("Rroll"))
+            {
 
-        hingeSpring.targetPosition = 10 * Input.GetAxis("Horizontal");
+                surfaceSpring.targetPosition = 2.5f * Input.GetAxis("Horizontal") + rollTrim;
 
-        connection.spring = hingeSpring;
+            }
+            else if (joint.connectedBody.CompareTag("pitch"))
+            {
+
+                surfaceSpring.targetPosition = -5 * Input.GetAxis("Vertical") + pitchTrim;
+
+            }
+            else if (joint.connectedBody.CompareTag("yaw"))
+            {
+
+                surfaceSpring.targetPosition = 20 * Input.GetAxis("Yaw") + yawTrim;
+
+            };
+
+            joint.spring = surfaceSpring;
+        }
     }
 }
