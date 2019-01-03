@@ -7,6 +7,9 @@ public class UserControl : MonoBehaviour {
     public float pitchTrim = 0.0f;
     public float yawTrim = 0.0f;
     public float rollTrim = 0.0f;
+    public float pitchDeflection = 5.0f;
+    public float yawDeflection = 20.0f;
+    public float rollDeflection = 2.5f;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,25 +23,25 @@ public class UserControl : MonoBehaviour {
             if (joint.connectedBody.CompareTag("Lroll"))
             {
                 
-                surfaceSpring.targetPosition = -2.5f * Input.GetAxis("Horizontal") - rollTrim;
+                surfaceSpring.targetPosition = -rollDeflection * Input.GetAxis("Horizontal") - rollTrim;
                 
             }
             else if (joint.connectedBody.CompareTag("Rroll"))
             {
 
-                surfaceSpring.targetPosition = 2.5f * Input.GetAxis("Horizontal") + rollTrim;
+                surfaceSpring.targetPosition = rollDeflection * Input.GetAxis("Horizontal") + rollTrim;
 
             }
             else if (joint.connectedBody.CompareTag("pitch"))
             {
 
-                surfaceSpring.targetPosition = -5 * Input.GetAxis("Vertical") + pitchTrim;
+                surfaceSpring.targetPosition = -pitchDeflection * Input.GetAxis("Vertical") + pitchTrim;
 
             }
             else if (joint.connectedBody.CompareTag("yaw"))
             {
 
-                surfaceSpring.targetPosition = 20 * Input.GetAxis("Yaw") + yawTrim;
+                surfaceSpring.targetPosition = yawDeflection * Input.GetAxis("Yaw") + yawTrim;
 
             };
 
