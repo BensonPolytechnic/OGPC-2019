@@ -10,6 +10,6 @@ public class angularDraginator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.angularDrag = Mathf.Pow(rb.velocity.magnitude * rb.angularVelocity.magnitude, degree) * velocityMultipler;
+        rb.angularDrag = Mathf.Pow(rb.velocity.magnitude * (1 / (1 + Mathf.Pow(2, -Mathf.Pow(rb.angularVelocity.magnitude, 2)))), degree) * velocityMultipler;
 	}
 }
